@@ -10,8 +10,8 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "A responsive portfolio website built using React and Tailwind CSS.",
-    github: "https://github.com/your-username/portfolio",
-    live: "https://your-portfolio.vercel.app",
+    github: "https://github.com/Akash200124/portfolio",
+    live: "https://portfolio-sandy-delta-57.vercel.app/",
     image: portfolio,
   },
   {
