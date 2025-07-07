@@ -84,18 +84,7 @@ function About() {
                                     " Stakeholder Communication & Reporting",
                                 ]}
                             />
-                            <ExperienceItem
-                                company="Mobisec Technologies"
-                                role="Quality Assurance Engineer"
-                                duration="Jul 2023 – Oct 2024"
-                                points={[
-                                    "Analyze requirements and prepare test plans and cases.",
-                                    "Perform manual testing (regression, smoke, sanity) on web, mobile, and desktop apps.",
-                                    "Develop automation scripts using Selenium with Java.",
-                                    "Conduct API testing using Postman.",
-                                    "Manage bugs and tasks using JIRA, and share detailed test reports.",
-                                ]}
-                            />
+                           
                             <ExperienceItem
                                 company="Variables Software"
                                 role="QA/QC Engineer"
@@ -111,7 +100,7 @@ function About() {
                         </div>
 
                         <a
-                            href="https://drive.google.com/file/d/1iMLEQyGl2E6jX5UyPco9WCK6yXkETX79/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1EyPyEwwTVcI9QdiR2SmFGEIAH6urAb7Y/view?usp=sharing"
                             target="_blank"
                             className="mt-8 flex direction-row hover:text-blue-600 transition"
                             rel="noreferrer"
