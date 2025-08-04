@@ -5,6 +5,7 @@ import chat from "../assets/project/chat.png";
 import portfolio from "../assets/project/portfolio.png";
 import document from "../assets/project/document.jpg";
 import selfCar from "../assets/project/selfCar.png";
+import ibrowser from "../assets/project/ibrowser.png";
 
 const projects = [
   {
@@ -53,6 +54,15 @@ const projects = [
     live: "", // Add live link if hosted
     image: chat,
   },
+  {
+    title: "iBrowser – Stealth Desktop Browser",
+    description:
+      "A desktop browser that stays hidden during screen sharing, built with Electron for private, undetectable browsing.",
+    github: "https://github.com/Akash200124/Browser", 
+    live: "https://ibrowser.vercel.app/",
+    image: ibrowser,
+  }
+
 ];
 
 const Projects = () => {
