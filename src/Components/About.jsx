@@ -45,11 +45,19 @@ import java from "../assets/java.svg";
 import git from "../assets/git.svg";
 import django from "../assets/django.svg";
 import mysql from "../assets/mysql.svg";
-
+import sassCover from "../assets/sassCover.jpg";
+import nextjs from "../assets/nextjs.jfif";
+import sqlite from "../assets/sqllight.jfif";
+import boltdb from "../assets/boltdb.png";
+import bash from "../assets/bash.jpg";
+import Playwright from "../assets/playwright.svg";
+import Pytest from "../assets/pytest.svg";
+import podman from "../assets/podman.png";
+import rabbitmq from "../assets/rabbitmq.svg";
 function About() {
     return (
         <section className="relative text-white py-16 px-4 md:px-30 overflow-hidden min-h-screen" id="about">
-            <div className="absolute inset-0 -z-10">
+            <div className="absolute inset-0 -z-0">
                 <VantaBackgroundwithout />
             </div>
 
@@ -63,9 +71,34 @@ function About() {
                         <h3 className="text-4xl font-semibold mb-6">Experience</h3>
                         <div className="space-y-10 border-l border-gray-700 pl-6">
                             <ExperienceItem
+                                company="HCL Technologies"
+                                role="Senior Software Engineer"
+                                duration="March 2026 – Present"
+                                points={[
+                                    "Developing and maintaining scalable full-stack applications using React, Node.js, and modern frameworks.",
+                                    "Designing RESTful APIs and integrating backend services with frontend systems.",
+                                    "Optimizing application performance and improving user experience across modules.",
+                                    "Collaborating with cross-functional teams in Agile environment to deliver high-quality features.",
+                                    "Reviewing code, debugging critical issues, and ensuring best coding practices."
+                                ]}
+                            />
+
+                            <ExperienceItem
+                                company="Kellton Tech Solutions"
+                                role="Senior Software QA Engineer"
+                                duration="Oct 2025 – March 2026"
+                                points={[
+                                    "Designed and executed automated test scripts using Selenium for web applications.",
+                                    "Performed API testing and validation using Postman to ensure backend reliability.",
+                                    "Identified, documented, and tracked bugs, improving overall product quality.",
+                                    "Collaborated closely with developers to reproduce issues and ensure faster resolution.",
+                                    "Contributed to test planning, regression testing, and continuous integration workflows."
+                                ]}
+                            />
+                            <ExperienceItem
                                 company="Mobisec Technologies"
                                 role="Product Manager"
-                                duration="Oct 2024 – Present"
+                                duration="Oct 2024 – Oct 2025"
                                 points={[
                                     "Developed full-stack enterprise applications using React and Next.js.",
                                     "Led development team; planned tech strategies, coded, and reviewed PRs.",
@@ -84,7 +117,7 @@ function About() {
                                     " Stakeholder Communication & Reporting",
                                 ]}
                             />
-                           
+
                             <ExperienceItem
                                 company="Variables Software"
                                 role="QA/QC Engineer"
@@ -113,25 +146,75 @@ function About() {
                     {/* Skills Section */}
                     <div>
                         <h3 className="text-3xl font-semibold mb-6">Skills & Technologies</h3>
-                        <div className="flex flex-wrap gap-6">
-                            <SkillItem logo={reactLogo} name="React" />
-                            <SkillItem logo={tailwindLogo} name="Tailwind CSS" />
-                            <SkillItem logo={nodeLogo} name="Node.js" />
-                            <SkillItem logo={mongodbLogo} name="MongoDB" />
-                            <SkillItem logo={github} name="GitHub" />
-                            <SkillItem logo={git} name="Git" />
-                            <SkillItem logo={bootstrap} name="Bootstrap" />
-                            <SkillItem logo={express} name="Express" />
-                            <SkillItem logo={js} name="JavaScript" />
-                            <SkillItem logo={html} name="HTML" />
-                            <SkillItem logo={css} name="CSS" />
-                            <SkillItem logo={postman} name="Postman" />
-                            <SkillItem logo={selenium} name="Selenium" />
-                            <SkillItem logo={java} name="Java" />
-                            <SkillItem logo={docker} name="Docker" />
-                            <SkillItem logo={python} name="Python" />
-                            <SkillItem logo={django} name="Django" />
-                            <SkillItem logo={mysql} name="MySQL" />
+
+                        <div className="space-y-8">
+
+                            {/* Frontend */}
+                            <div>
+                                <h4 className="text-xl font-semibold mb-4">Frontend</h4>
+                                <div className="flex flex-wrap gap-6">
+                                    <SkillItem logo={reactLogo} name="React" />
+                                    <SkillItem logo={js} name="JavaScript" />
+                                    <SkillItem logo={html} name="HTML" />
+                                    <SkillItem logo={css} name="CSS" />
+                                    <SkillItem logo={tailwindLogo} name="Tailwind CSS" />
+                                    <SkillItem logo={bootstrap} name="Bootstrap" />
+                                    <SkillItem logo={nextjs} name="Next.js" />
+                                    <SkillItem logo={sassCover} name="SCSS" />
+                                </div>
+                            </div>
+
+                            {/* Backend */}
+                            <div>
+                                <h4 className="text-xl font-semibold mb-4">Backend</h4>
+                                <div className="flex flex-wrap gap-6">
+                                    <SkillItem logo={nodeLogo} name="Node.js" />
+                                    <SkillItem logo={express} name="Express" />
+                                    <SkillItem logo={django} name="Django" />
+                                </div>
+                            </div>
+
+                            {/* Databases */}
+                            <div>
+                                <h4 className="text-xl font-semibold mb-4">Databases</h4>
+                                <div className="flex flex-wrap gap-6">
+                                    <SkillItem logo={mongodbLogo} name="MongoDB" />
+                                    <SkillItem logo={mysql} name="MySQL" />
+                                    <SkillItem logo={sqlite} name="SQL Lite" />
+                                    <SkillItem logo={boltdb} name="BoltDB" />
+
+                                </div>
+                            </div>
+
+                            {/* Programming Languages */}
+                            <div>
+                                <h4 className="text-xl font-semibold mb-4">Languages</h4>
+                                <div className="flex flex-wrap gap-6">
+                                    <SkillItem logo={js} name="JavaScript" />
+                                    <SkillItem logo={java} name="Java" />
+                                    <SkillItem logo={python} name="Python" />
+                                    <SkillItem logo={bash} name="Shell scripting" />
+                                </div>
+                            </div>
+
+                            {/* Tools */}
+                            <div>
+                                <h4 className="text-xl font-semibold mb-4">Tools & DevOps</h4>
+                                <div className="flex flex-wrap gap-6">
+                                    <SkillItem logo={git} name="Git" />
+                                    <SkillItem logo={github} name="GitHub" />
+                                    <SkillItem logo={docker} name="Docker" />
+                                    <SkillItem logo={postman} name="Postman" />
+                                    <SkillItem logo={selenium} name="Selenium" />
+                                    <SkillItem logo={Playwright} name="Playwright" />
+                                    <SkillItem logo={Pytest} name="Pytest" />
+                                    <SkillItem logo={podman} name="Podman" />
+                                    <SkillItem logo={rabbitmq} name="RabbitMQ" />
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
